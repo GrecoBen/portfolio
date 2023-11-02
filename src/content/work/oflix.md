@@ -2,34 +2,43 @@
 title: Oflix
 publishDate: 2020-03-02 00:00:00
 img: /assets/oflix.JPG
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Image de fond Oflix
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Plateforme de streaming
 tags: 
   - Dev
   - User Testing
   - Prod
 ---
 
-## Level-two heading
+## Concept
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Le projet Oflix à été réalisé pendant ma spécialisation Symfony au cours de ma formation.
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+ Il a pour objectif de mettre à disposition une plateforme en ligne dédiée aux
+aux films, où les utilisateurs une fois enregistrés et connectés peuvent créer une liste de films favoris.
+Les administrateurs ont accès au CRUD des films afin de créer, editer, modifier ou supprimer des films.
+Les administrateurs peuvent également ajouter ou supprimer des utilisateurs. Il n'a été réalisé uniquement en back end
+en utilisant le générateur de template Twig pour rendre les vues.
+J'ai travaillé seul sur ce projet.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
 
-### Level-three heading
+### Technologies
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+#### Back end
 
-### Level-three heading
+##### Framework Symfony, Doctrine, Twig, Bootstrap, MySQL, JWT, PhpMyAdmin, Insomnia
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+La partie back-end a été réalisée à l’aide du framework PHP Symfony dont l’approche se base sur des
+composants et et du modèle MVC (Model-View-Controller).
+MakerBundle a été utilisé pour permettre de générer rapidement des commandes vides, contrôleurs,
+classes de formulaire, etc. en une ligne de commande.
+L’ORM Doctrine a été utilisé pour la gestion de base de données, en tant qu’ORM son rôle est de
+transformer les objets PHP en écriture SQL, et récupérer les écritures SQL et les transformer en objet
+PHP
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
-
-#### Level-four heading
-
-- We noted this
-- And also this other point
+Le bundle Lexik JWT Authentication pour l’utilisation de token JWT, ce jeton sera envoyé envoyer à
+chaque requête que l’on souhaite effectuer auprès d’une API afin de s’authentifier. Il contient toutes
+les informations nécessaires à notre identification.
+Notre serveur Symfony est lié à une base de données MySQL, administré via le gestionnaire de base
+de données Adminer ou PHPMyAdmin selon les goûts de chacun.
